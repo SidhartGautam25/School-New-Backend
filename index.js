@@ -1,11 +1,11 @@
-const express = require("express");
+import express from "express";
 const app = express();
-const dotenv = require("dotenv");
-const mongoose = require("mongoose");
-const cors = require('cors');
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+import cors from 'cors';
 import cookieParser from "cookie-parser";
 
-const auth_routes = require('./routes/auth.js')
+import auth_routes from './routes/auth.js'
 
 app.use(cors());
 dotenv.config();
